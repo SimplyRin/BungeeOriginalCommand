@@ -1,0 +1,4 @@
+main: net.simplyrin.bungeeoriginalcommand.BungeeOriginalCommand
+version: 1.0
+name: BungeeGetTabCommand
+author: SimplyRin
