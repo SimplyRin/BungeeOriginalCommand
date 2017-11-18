@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.Arrays;
 
 import net.md_5.bungee.api.ChatColor;
-import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.event.ChatEvent;
 import net.md_5.bungee.api.plugin.Listener;
@@ -90,7 +89,7 @@ public class BungeeOriginalCommand extends Plugin implements Listener {
 
 			if (config.getStringList("Commands." + args[0] + ".Return-Message") != null) {
 				for (String msg : config.getStringList("Commands." + args[0] + ".Return-Message")) {
-					player.sendMessage(new TextComponent(ChatColor.translateAlternateColorCodes('&', msg)));
+					player.sendMessage(ChatColor.translateAlternateColorCodes('&', msg));
 				}
 			}
 
